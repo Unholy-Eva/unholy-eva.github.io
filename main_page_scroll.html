@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS16 Styled Page</title>
+  <link rel="stylesheet" href="/src/cs16.css" />
+  <style>
+    .corner-frame {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      border: 2px solid var(--border-light);
+      background-color: var(--secondary-bg);
+      padding: 5px;
+      max-width: 120px;
+    }
+    .corner-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .spacer {
+      height: 1500px;
+    }
+    .footer-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <main style="padding: 2rem; max-width: 800px; margin: auto;">
+    <h1>Welcome to the Retro Styled Page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+
+    <h2>Sample Form</h2>
+    <label class="cs-input__label" for="name">Name</label>
+    <input id="name" type="text" class="cs-input" placeholder="Enter your name" />
+
+    <br><br>
+
+    <label class="cs-checkbox">
+      <input type="checkbox" />
+      <span class="cs-checkbox__label">Accept terms and conditions</span>
+    </label>
+
+    <br><br>
+
+    <button class="cs-btn">Submit</button>
+
+    <hr class="cs-hr" />
+
+    <div class="cs-progress-bar">
+      <div class="bars" style="width: 60%;"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="footer-buttons">
+      <button class="cs-btn">Back</button>
+      <button class="cs-btn">Next</button>
+    </div>
+  </main>
+
+  <div class="corner-frame">
+    <img src="/assets/img_01.png" alt="Funny message" />
+  </div>
+</body>
+</html>
