@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CS16 Styled Page</title>
   <link rel="stylesheet" href="/src/cs16.css" />
+    <style>
+    .corner-frame {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      border: 2px solid var(--border-light);
+      background-color: var(--secondary-bg);
+      padding: 5px;
+      max-width: 120px;
+    }
+    .corner-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <main style="padding: 2rem; max-width: 800px; margin: auto;">
@@ -32,5 +48,9 @@
       <div class="bars" style="width: 60%;"></div>
     </div>
   </main>
+
+  <div class="corner-frame">
+    <img src="/assets/img_01." alt="Funny message" />
+  </div>
 </body>
 </html>
